@@ -1,0 +1,386 @@
+<!DOCTYPE html> 
+
+
+<html> 
+
+<head> 
+
+	<style> 
+		.deals{ 
+
+				color: red;
+				font-weight: bold;
+				font-size: 20px;
+				font-style: italic;
+				text-align: center;
+		}
+		body{ 	
+			background-color: lightyellow;
+			font-family: 'Trebuchet MS';
+
+		}
+
+		button{
+			margin-right: 20px;
+			margin-bottom: 20px;
+			font-size: 17px;
+			border-radius: 15px;
+			border: solid lightblue;
+			font-family: 'Segoe UI';
+                        cursor: pointer;
+		}
+
+
+	
+
+	
+		.image{ 
+			width: 400px;
+		}
+
+		.img-align{
+			display: block;
+ 			margin-left: auto;
+  			margin-right: auto;
+  			width: 20%;
+
+			
+		}
+		.moto{ 
+			font-size: 20px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: center;
+
+		}
+
+		.rates{ 
+			text-align: center;
+			font-weight: bold;
+
+		}
+		.web-page{ 
+			display: grid; 
+			grid-template-columns: 1000px 700px;
+			grid-column-gap: 50px;
+
+		}
+		.grade-9{ 
+			margin-top: 20px;
+		}
+		.grade-9, .grade-10, .grade-11, .grade-12, .ai-option, .testiominals{ 
+			font-size: 20px;
+			font-weight: bold;
+		
+		}
+
+		.ai-option{ 
+			color: red;
+		}
+
+		.testimonials{ 
+			margin-top: 90px;
+
+		}
+
+		.toggle-off-button{ 
+			background-color: black; 
+			color: white;
+			border: solid rgb(255, 90, 90);
+		}
+
+		.shopping-cart{
+			background-color: white;
+			color: black;
+		}
+
+
+
+		.ai-toggle{ 
+			width: 30px;
+			padding-top: 6px;
+			background-color: transparent;
+		}
+
+		.testiominals{ 
+
+			text-align: center;
+		}
+
+		.testimony{ 
+			text-align: center; 
+			font-style: italic;
+		
+		}
+
+		.cart-header, .cart-contents{ 
+
+			display: grid;
+			grid-template-columns: 150px 150px 100px;
+		}
+
+		.cart-header{ 
+			font-weight: bold;
+		}
+
+
+
+		
+
+		
+	
+	</style> 
+	<title> Terry's Tutoring Traditions </title> 
+</head> 
+
+<body> 
+
+	<p class = "deals">On Now!!! Special 6 Pack Deal with Grade 12 Science and Math Courses </p> 
+
+	<div class = "img-align">
+		<p> </p>
+		<img src = "https://i.ibb.co/88cmSV7/soon.png" class = "image"> 
+		<p> </p>
+	</div> 
+	<p class = "moto"> "Tearing Tests Through Tormenting Treats" - Terry Tilderson </p>
+	<p class = "rates">Terry's 9th: $39.99 | Terry's 10th: $49.99 | Terry's 11th: $59.99 | Terry's 12th: $69.99</p> 
+	<p class = "subtext"> Welcome... </p>
+	
+
+	
+	<div class = "web-page"> 
+	
+	<div> 
+	
+	<p class =  "grade-9"> Terry's 9th </p> 
+	<button class = "math-9" onclick = "toggleKK('math-9', 'Math', 9);"> Math </button> 
+	<button class = "english-9" onclick = "toggleKK('english-9', 'English', 9)"> English </button> 
+	<button class = "science-9" onclick = "toggleKK('science-9', 'Science', 9)"> Science </button>
+	<button class = "french-9" onclick = "toggleKK('french-9', 'French', 9)"> French </button> 
+	<button class = "music-9 " onclick = "toggleKK('music-9', 'Music', 9)"> Music </button> 
+	<button class = "business-9 " onclick = "toggleKK('business-9', 'Business', 9)"> Business </button>
+
+	
+	<p class = "grade-10"> Terry's 10th</p> 
+
+	<button class = "math-10" onclick = "toggleKK('math-10', 'Math', 10)"> Math </button> 
+	<button class = "english-10 " onclick = "toggleKK('english-10', 'English', 10)"> English </button> 
+	<button class = "science-10 " onclick = "toggleKK('science-10', 'Science', 10)"> Science </button>
+	<button class = "french-10 " onclick = "toggleKK('french-10', 'French', 10)"> French </button> 
+	<button class = "music-10 " onclick = "toggleKK('music-10', 'Music', 10)"> Music </button> 
+	<button class = "business-10 " onclick = "toggleKK('business-10', 'Business', 10)"> Business </button>
+	<button class = "compeng-10 " onclick = "toggleKK('compeng-10', 'Computer Engineering', 10)"> Computer Engineering </button> 
+	<button class = "compsci-10 " onclick = "toggleKK('compsci-10', 'Computer Science', 10)" > Computer Science </button>
+
+	
+	
+	<p class = "grade-11"> Terry's 11th </p> 
+
+	<button class = "math-11 " onclick = "toggleKK('math-11', 'Math', 11)"> Math </button> 
+	<button class = "english-11 " onclick = "toggleKK('english-11', 'English', 11)"> English </button> 
+	<button class = "physics-11 " onclick = "toggleKK('physics-11', 'Physics', 11)"> Physics</button>
+	<button class = "chemistry-11 " onclick = "toggleKK('chemistry-11', 'Chemistry', 11)"> Chemistry </button> 
+	<button class = "biology-11 " onclick = "toggleKK('biology-11', 'Biology', 11)"> Biology </button>
+	<button class = "french-11 " onclick = "toggleKK('french-11', 'French', 11)"> French </button> 
+	<button class = "music-11 " onclick = "toggleKK('music-11', 'Music', 11)"> Music </button> 
+	<button class = "accounting-11 " onclick = "toggleKK('accounting-11', 'Accounting', 11)"> Business </button>
+	<button class = "compeng-11 " onclick = "toggleKK('compeng-11', 'Computer Engienering', 11)"> Computer Engineering </button> 
+	<button class = "compsci-11 " onclick = "toggleKK('compsci-11', 'Computer Science', 11)" > Computer Science </button>
+
+	
+	
+	<p class = "grade-12"> Terry's 12th </p> 
+
+	<button class = "advanced-functions-12" onclick = "toggleKK('advanced-functions-12', 'Advanced Functions', 12); "> Advanced Functions </button> 
+	<button class = "data-management-12" onclick = "toggleKK('data-management-12', 'Data Mangement', 12); "> Data Management </button> 
+	<button class = "calc-vectors-12" onclick = "toggleKK('calc-vectors-12', 'Calculus and Vectors', 12); "> Calculus and Vectors </button> 
+	<button class = "english-12" onclick = "toggleKK('english-12', 'English', 12)"> English </button> 
+	<button class = "physics-12" onclick = "toggleKK('physics-12', 'Physics', 12);"> Physics</button>
+	<button class = "chemistry-12" onclick = "toggleKK('chemistry-12', 'Chemistry', 12); "> Chemistry </button> 
+	<button class = "biology-12" onclick = "toggleKK('biology-12', 'Biology', 12);"> Biology </button>
+	<button class = "french-12 " onclick = "toggleKK('french-12', 'French', 12)"> French </button> 
+	<button class = "music-12 " onclick = "toggleKK('music-12', 'Music', 12)"> Music </button> 
+	<button class = "accounting-12 " onclick = "toggleKK('accounting-12', 'Accounting', 12)"> Business </button>
+	<button class = "compeng-12 " onclick = "toggleKK('compeng-12', 'Computer Engineering', 12)"> Computer Engineering </button> 
+	<button class = "compsci-12 " onclick = "toggleKK('compsci-12', 'Computer Science', 12)"> Computer Science </button>
+
+	<p class = "ai-option"> **NEW** A.I. Companion with new GPT-4o!!!! </p> 
+
+	<button class = "js-ai-option ai-option" onclick = "AIToggleKK()"> <img src = 'https://i.ibb.co/D82dFZJ/Checkmark.png' class = 'ai-toggle'> </img> </button> 
+
+	
+	<p class = "testiominals"> Testimonials </p> 
+
+	<p class = "testimony"> 
+		"Terry is so cool 😎" - Terry
+	</p>
+	<p class = "testimony"> 
+		"Terry is the best tutor" - Terry
+	</p>
+	<p class = "testimony"> 
+		"Terry is hot" - Terry
+	</p> 
+	<p class = "testimony"> 
+		"Terry is one of the best teachers in the world" - Terry
+	</p> 
+
+
+	</div>
+	
+
+	<div class = "shopping-cart"> 
+		<p style = "font-weight: bold; font-size: 20px;"> Cart: </p>
+		<div class = "cart-header"> 
+		<p>Grade</p>
+		<p>Course</p>
+		<p>Price</p> 
+		</div>
+		<div class = "js-shopping-cart cart-contents"> </div> 
+		<p class =  "js-ai-cart"> </p> 
+		<p style = "font-weight: bold; margin-top: 150px; font-size: 20px; "> Total Cost </p>
+		<p style = "font-weight: bold" class = "js-subtotal"> Subtotal: </p>
+		<p> Tax (13%) </p>
+		<p class = "js-discount"> </p>
+		<p class = "js-total" style = "font-weight: bold"> Total: </p>
+		
+
+	</div>
+	</div>
+
+	<script> 
+		let grade12SpecialCountKK = 0; 
+		let cartArrayKK = [];
+		let subTotalKK = 0;
+		let totalKK = 0;
+
+		function AIToggleKK(){ 
+
+			buttonElementKK = document.querySelector('.js-ai-option'); 
+
+			if(!buttonElementKK.classList.contains('toggle-off-ai')){ 
+				buttonElementKK.innerHTML = `<img src = "https://i.ibb.co/82NXH71/X.png" class = "ai-toggle"> </img>`;
+				buttonElementKK.classList.add('toggle-off-ai');
+				document.querySelector('.js-ai-cart').innerHTML = "A.I. Companion $19.99";
+				subTotalKK += (1999)/100;
+				
+				
+			} else {
+				buttonElementKK.innerHTML = `<img src = "https://i.ibb.co/D82dFZJ/Checkmark.png" class = "ai-toggle"> </img>`;
+				buttonElementKK.classList.remove('toggle-off-ai');
+				document.querySelector('.js-ai-cart').innerHTML = "";
+				subTotalKK -= (1999)/100;
+			} 
+			dealChecker();
+		}
+
+		function inGrade12ArrayKK(buttonName){ 
+			let isPresentKK= false;
+			let grade12SpecialArrayKK = [ 'physics-12', 'chemistry-12', 'biology-12', 'data-management-12', 'advanced-functions-12', 'calc-vectors-12']
+			for(let i = 0; i < grade12SpecialArrayKK.length; i++){ 
+			
+				if(buttonName === grade12SpecialArrayKK[i]){
+					
+					console.log('yess');
+					isPresentKK = true;
+				
+				}
+			}
+	
+
+			return isPresentKK;
+
+		} 
+		function toggleKK(buttonName, courseName, grade){
+
+			buttonElementKK = document.querySelector("." + buttonName); 
+	
+			if(!(buttonElementKK.classList.contains('toggle-off-button'))){
+				buttonElementKK.classList.add('toggle-off-button'); 
+				if(inGrade12ArrayKK(buttonName)){
+					grade12SpecialCountKK++;
+				}
+	
+				addToCartKK(courseName, grade);		
+			
+			} else { 
+				buttonElementKK.classList.remove('toggle-off-button');
+				if(inGrade12ArrayKK(buttonName)){
+					grade12SpecialCountKK--;
+				}
+				removeFromCartKK(courseName, grade);
+			
+			}
+			dealChecker();
+		}			
+				
+		function dealChecker(){
+			if((cartArrayKK.length) == 6 && (grade12SpecialCountKK) === 6){
+				totalKK =  subTotalKK * 0.8 * 1.13;
+				document.querySelector('.js-discount').innerHTML = "6 Pack Discount (20% off)";
+			} else { 
+				totalKK = subTotalKK * 1.13;
+				document.querySelector('.js-discount').innerHTML = "";
+			
+			} 
+
+		
+			renderCartKK();
+		}
+		function removeFromCartKK(courseName, grade){ 
+
+			for(let i = 0; i <= cartArrayKK.length-1; i++){ 
+
+				if(courseName === cartArrayKK[i].course && grade === cartArrayKK[i].grade){ 
+					subTotalKK = subTotalKK - cartArrayKK[i].price;
+					cartArrayKK.splice(i, 1); 			
+				}
+			}
+			dealChecker();
+		} 
+		
+
+		function addToCartKK(name, grade){ 
+			let cost = 0; 
+			if (grade === 9){ 
+				cost = (3999)/100; 
+			} else if (grade === 10){
+				cost = (4999)/100;
+			} else if (grade === 11){
+				cost = (5999)/100;
+			} else if (grade === 12){
+				cost = (6999)/100;
+			}
+
+			subTotalKK += cost;
+			totalKK = subTotalKK * (113)/100;
+
+			cartArrayKK.push({course: name, grade: grade, price: cost});
+
+			dealChecker();
+			
+
+			
+		}
+
+
+		function renderCartKK(){
+			document.querySelector('.js-subtotal').innerHTML = "Subtotal: $" + Math.round(subTotalKK, 2); 
+			document.querySelector('.js-total').innerHTML = "Total: $" + Math.round(totalKK, 2);
+
+			let cartHTMLKK = "";
+			for(let i = 0; i <= cartArrayKK.length-1; i++){ 
+				const htmlKK = `<div>Gr-${cartArrayKK[i].grade} </div>
+								<div> ${cartArrayKK[i].course} </div>
+								<div> $${cartArrayKK[i].price} </div>		
+				`
+				cartHTMLKK += htmlKK;
+			}
+
+			document.querySelector('.js-shopping-cart').innerHTML = cartHTMLKK;
+		}
+
+
+	</script> 
+</body> 
+</html> 
+

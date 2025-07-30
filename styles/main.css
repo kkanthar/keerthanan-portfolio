@@ -1,0 +1,375 @@
+.main-grid{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 80px 20px;
+
+}
+
+
+.intro-section{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    
+}
+
+.sound-name{
+    cursor: pointer;
+    position: relative;
+    font-variation-settings: 'wght' 300;
+}
+
+@media(pointer: none), (pointer:coarse){ 
+    .sound-name::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(255, 206, 5);
+        transition: width 0.5s;
+    }
+
+    .sound-name:hover::after{
+        width: 0%;
+    }
+
+
+}
+
+
+.header-title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.description-text{
+    line-height: 27px;
+    font-size: 17px;
+    
+}
+
+.contact-section{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.contact-button{
+    font-family: Radio Canada, Arial;
+    background-color: rgb(255, 206, 5);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+
+}
+
+.contact-button:hover{
+    background-color: black;
+    color: rgb(255, 206, 5);
+
+}
+
+.contact-button:active{
+    background-color: rgb(63, 63, 63);
+}
+
+.contact-arrow {
+    display: inline-block;
+    margin-left: 5px;
+    transform: scale(120%);
+    transition: transform 0.15s ease-in-out;
+    animation: shakeArrow 2s infinite 7s;
+
+}
+
+.contact-arrow.turn{
+    transform: rotate(180deg);
+    animation: none;
+
+    
+}
+
+@keyframes shakeArrow {
+    50% {
+        transform: translateX(1vw);
+
+    }
+
+    100% {
+        transform: translateX(0vw);
+    }
+
+}
+
+.hidden-contacts{
+    display: flex;
+    
+    transition: opacity 0.15s ease-in-out;
+    opacity: 0;
+
+    gap: 15px;
+    align-items: center;
+}
+
+.hidden-contacts.show {
+    visibility: visible;
+    opacity: 1;
+    animation: springBounce 0.8s forwards;
+
+}
+
+.hidden-contacts.hide{
+    animation: springBounceOut 0.6s forwards;
+    overflow: hidden;
+}
+
+
+
+@keyframes springBounce {
+    0% {
+        transform: scale(0.1);
+        transform: translateX(-50vw);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    50% {
+        transform: scale(1);
+        transform: translateX(2vw);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes springBounceOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+
+
+
+    100%{
+        transform: scale(0.1);
+        opacity: 0%;
+        visibility: hidden;
+        transform: translateX(-50vw);
+        pointer-events: none;
+    }
+
+} 
+
+.email-button{
+    
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+.email-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.email-icon{
+    width: 20px;
+}
+
+.email-button-text{
+    transition: transform 0.35s ease-in-out;
+}
+
+
+.email-button:hover{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 9px 19px;
+
+}
+
+.email-button:active .email-button-text{
+    transform: scale(0.85);
+}
+
+.email-copied-text{
+    position: absolute; 
+    bottom: -40px;
+    left: 10px;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+    pointer-events: none;
+}
+
+.email-copied-text.show{
+    opacity: 1;
+}
+
+.linkedin-button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.ln-icon{
+    width: 30px;
+}
+
+
+
+
+
+.project-outline{
+    margin-top: 40px;
+    background-color: black;
+    height: 30vh;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.431);
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    border: solid;
+    border-color: gray;
+    border-width: 3px;
+    transition-delay: 0.15s;
+    transition: transform 0.15s;
+    color: white;
+    overflow: scroll;
+
+    
+}
+
+
+
+.project-outline:hover{
+    transform: scale(125%);
+    z-index: 100;
+    transition: transform 0.15s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+@media (max-width: 900px){
+    .project-outline:hover{
+        transform: scale(110%);
+        
+    }
+}
+
+.project-outline .project-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.project-outline .project-title{
+    font-size: 18px;
+    margin: 0;
+
+}
+
+.project-outline .project-description{
+    margin-top: 15px;
+    line-height: 27px;
+}
+
+.project-outline .run-project{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.run-project:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+.project-outline .close-project{
+    cursor: pointer;
+}
+
+.close-project:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.go-to-project{
+    font-family: Radio Canada, Arial;
+    color: white;
+    text-decoration: none;
+}
+
+.go-to-project:visited{ 
+    color: white;
+}
+
+.go-to-project:hover{
+    text-decoration: underline;
+}
+
+
+.tutoring-service{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    height: 800px;
+    left: -175px;
+    margin-top: -100px;
+    width: 150%;
+    z-index: 100;
+    transform: scale(0.7);
+
+}
+
+.tutoring-service.show{
+    display: block;
+    opacity: 1;
+    visibility:visible;
+}
+
+.password-manager{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    
+
+}
+.password-manager.show{
+    display: block;
+    z-index: 100;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
