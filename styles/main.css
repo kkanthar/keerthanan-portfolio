@@ -229,7 +229,7 @@
     opacity: 1;
 }
 
-.linkedin-button{
+.socialmedia-button{
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -239,6 +239,10 @@
 }
 
 .ln-icon{
+    width: 30px;
+}
+
+.github-icon{
     width: 30px;
 }
 
