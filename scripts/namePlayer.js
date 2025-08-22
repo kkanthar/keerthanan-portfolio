@@ -8,7 +8,7 @@ nameRead.addEventListener("click", () => {
 
 
     }
-    let audio = new Audio("audo-recording/keerthanan-name-capture.mp3")
+    let audio = new Audio("audio-recording/keerthanan-name-capture.mp3")
     currentAudio = audio;
     audio.play();
 
