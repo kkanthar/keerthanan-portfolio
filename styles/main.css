@@ -104,12 +104,12 @@
 
 @keyframes shakeArrow {
     50% {
-        transform: translateX(0.75vw);
+        transform: translateX(5px);
 
     }
 
     100% {
-        transform: translateX(0vw);
+        transform: translateX(0px);
     }
 
 }
@@ -262,9 +262,11 @@
     border-color: gray;
     border-width: 3px;
     transition-delay: 0.15s;
-    transition: transform 0.15s;
+    transition: transform 0.15s, height 0.15s;
     color: white;
     overflow: scroll;
+
+
 
     
 }
